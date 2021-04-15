@@ -37,6 +37,7 @@ save_path1 = valohai.outputs().path('myplot1.png')
 plt.savefig(save_path1)
 
 plt.show()
+plt.close()
 
 # Visualizar los resultados de test
 plt.scatter(X_test, y_test, color = "red")
@@ -50,3 +51,4 @@ save_path2 = valohai.outputs().path('myplot2.png')
 plt.savefig(save_path2)
 
 plt.show()
+plt.close()
