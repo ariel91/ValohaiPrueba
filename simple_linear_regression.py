@@ -32,6 +32,10 @@ plt.plot(X_train, regression.predict(X_train), color = "blue")
 plt.title("Sueldo vs Años de Experiencia (Conjunto de Entrenamiento)")
 plt.xlabel("Años de Experiencia")
 plt.ylabel("Sueldo (en $)")
+
+save_path1 = valohai.outputs().path('myplot1.png')
+plt.savefig(save_path1)
+
 plt.show()
 
 # Visualizar los resultados de test
@@ -40,7 +44,9 @@ plt.plot(X_train, regression.predict(X_train), color = "blue")
 plt.title("Sueldo vs Años de Experiencia (Conjunto de Testing)")
 plt.xlabel("Años de Experiencia")
 plt.ylabel("Sueldo (en $)")
-plt.show()
 
-save_path = valohai.outputs().path('myplot.png')
-plt.savefig(save_path)
+
+save_path2 = valohai.outputs().path('myplot2.png')
+plt.savefig(save_path2)
+
+plt.show()
