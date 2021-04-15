@@ -4,6 +4,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import valohai
 
 # Importar el data set
 dataset = pd.read_csv('Salary_Data.csv')
