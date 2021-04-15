@@ -2,7 +2,7 @@
 
 # Cómo importar las librerías
 import numpy as np
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importar el data set
@@ -24,7 +24,7 @@ regression.fit(X_train, y_train)
 # Predecir el conjunto de test
 y_pred = regression.predict(X_test)
 print(y_pred)
-"""
+
 # Visualizar los resultados de entrenamiento
 plt.scatter(X_train, y_train, color = "red")
 plt.plot(X_train, regression.predict(X_train), color = "blue")
@@ -40,4 +40,6 @@ plt.title("Sueldo vs Años de Experiencia (Conjunto de Testing)")
 plt.xlabel("Años de Experiencia")
 plt.ylabel("Sueldo (en $)")
 plt.show()
-"""
+
+save_path = valohai.outputs().path('myplot.png')
+plt.savefig(save_path)
