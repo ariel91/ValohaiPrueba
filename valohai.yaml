@@ -22,7 +22,7 @@
 
 - step:
     name: Preprocess data
-    image: python:3.6
+    image: tensorflow/tensorflow:2.0.1-gpu-py3
     command:
       - pip install numpy
       - pip install matplotlib
