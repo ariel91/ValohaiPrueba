@@ -16,7 +16,8 @@ import json
 #Get the path to the folder where Valohai inputs are
 input_path = os.getenv('VH_INPUTS_DIR', '.inputs/')
 # Get the file path of our MNIST dataset that we defined in our YAML
-dataset = os.path.join(input_path, 'salary_yaml/Salary_Data.csv')
+dataset_path = os.path.join(input_path, 'salary_yaml/Salary_Data.csv')
+dataset = pd.read_csv(dataset_path)
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 1].values
 
