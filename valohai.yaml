@@ -31,4 +31,4 @@
        - python simple_linear_regression.py
     inputs:
        -name: salary_yaml
-       -default: datum://0178c7f1-1325-0baa-74f3-261167ac19c2
+        default: datum://0178c7f1-1325-0baa-74f3-261167ac19c2
