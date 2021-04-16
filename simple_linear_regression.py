@@ -35,7 +35,7 @@ regression.fit(X_train, y_train)
 # Predecir el conjunto de test
 y_pred = regression.predict(X_test)
 df = pd.DataFrame(y_pred)
-#df.to_csv (r'/valohai/outputs/export_dataframe.csv', index = False, header=True)
+df.to_csv (r'/valohai/outputs/export_dataframe.csv', index = False, header=True)
 print(y_pred)
 
 # Visualizar los resultados de entrenamiento
