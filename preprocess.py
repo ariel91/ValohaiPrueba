@@ -29,5 +29,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 1/3, rando
 outputs_path = os.getenv('VH_OUTPUTS_DIR', './outputs')
 output_path = os.path.join(outputs_path, 'preprocessed_salary.csv')
 df = pd.read_csv(output_path)
-df.to_csv(output_path, X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test)
-#df.to_csv (r'/valohai/outputs/export_dataframe.csv', index = False, header=True)
+print(df)
+type(df)
+#df.to_csv(output_path, X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test)
+#df.to_csv (r'/valohai/outputs/export_dataframe.csv', index = False, header=True
+
