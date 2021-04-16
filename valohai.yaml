@@ -24,7 +24,7 @@
     name: Preprocess data
     image: python:3.6
     command:
-      - pip install numpy==1.18.1
+      - pip install numpy
       - pip install matplotlib
       - pip install pandas
       - pip install scikit-learn
