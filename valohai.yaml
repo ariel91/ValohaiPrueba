@@ -19,3 +19,16 @@
        - pip install scikit-learn
        - pip install valohai-cli
        - python simple_linear_regression.py
+       
+- step:
+    name: Salario de personal con Inputs Valohai
+    image: tensorflow/tensorflow:2.0.1-gpu-py3
+    command:
+       - pip install matplotlib
+       - pip install pandas
+       - pip install scikit-learn
+       - pip install valohai-cli
+       - python simple_linear_regression.py
+    inputs:
+       -name: salary_yaml
+       -default: datum://0178c7f1-1325-0baa-74f3-261167ac19c2

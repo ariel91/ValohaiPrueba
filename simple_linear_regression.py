@@ -5,9 +5,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import valohai
+import os 
+import json
 
 # Importar el data set
-dataset = pd.read_csv('Salary_Data.csv')
+
+#dataset = pd.read_csv('Salary_Data.csv')
+
+
+#Get the path to the folder where Valohai inputs are
+input_path = os.getenv('VH_INPUTS_DIR', '.inputs/')
+# Get the file path of our MNIST dataset that we defined in our YAML
+dataset = os.path.join(input_path, 'salary_yaml/Salary_Data.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 1].values
 
@@ -25,7 +34,7 @@ regression.fit(X_train, y_train)
 # Predecir el conjunto de test
 y_pred = regression.predict(X_test)
 df = pd.DataFrame(y_pred)
-df.to_csv (r'/valohai/outputs/export_dataframe.csv', index = False, header=True)
+#df.to_csv (r'/valohai/outputs/export_dataframe.csv', index = False, header=True)
 print(y_pred)
 
 # Visualizar los resultados de entrenamiento
