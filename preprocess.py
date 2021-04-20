@@ -28,7 +28,7 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 1/3, random_state = 0)
 
 output_path = os.getenv('VH_OUTPUTS_DIR', '.outputs/')
-OutDataset = os.path.join(output_path, 'carpeta_dataset_salida/train_dataframe.csv')
+OutDataset = os.path.join(output_path, 'train_dataframe.csv')
 
 X_train["Salary"]=y_train.tolist()
 train = X_train
