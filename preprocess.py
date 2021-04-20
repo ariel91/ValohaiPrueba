@@ -34,4 +34,8 @@ X_train["Salary"]=y_train.tolist()
 train = X_train
 #train.to_csv ("train_dataframe.csv", index = False, header=True)
 train.to_csv (OutDataset, index = False, header=True)
-#print(OutDataset)
+
+OutDataset2 = os.path.join(output_path, 'test_dataframe.csv')
+X_test["Salary"]=y_test.tolist()
+test = X_test
+test.to_csv (OutDataset2, index = False, header=True)
