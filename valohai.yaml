@@ -61,6 +61,6 @@
        - python train.py
     inputs:
        - name: train_yaml
-         default: datum://0178c7f1-1325-0baa-74f3-261167ac19c2
+         default: datum://0178ee5c-7746-284f-0626-b2c438a6878e
        - name: test_yaml
-         default: datum://0178ee5c-78d5-816b-4962-3dc9d7eaaf00h
+         default: datum://0178ee5c-78d5-816b-4962-3dc9d7eaaf00
