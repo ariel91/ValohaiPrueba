@@ -1,3 +1,13 @@
+# Cómo importar las librerías
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import valohai
+import os 
+import json
+import warnings
+warnings.filterwarnings("ignore")
+
 #OBTENCIÓN DE TRAIN Y TEST DESDE VALOHAI A TRAVÉS DE ARCHIVO YAML
 
 #Get the path to the folder where Valohai inputs are
