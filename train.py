@@ -16,7 +16,7 @@ input_path = os.getenv('VH_INPUTS_DIR', '.inputs/')
 dataset_train_path = os.path.join(input_path, 'train_yaml/train_dataframe.csv')
 
 #Get the path to the folder where Valohai inputs are
-input_path = os.getenv('VH_INPUTS_DIR', '.inputs/')
+#input_path = os.getenv('VH_INPUTS_DIR', '.inputs/')
 # Get the file path of our MNIST dataset that we defined in our YAML
 dataset_test_path = os.path.join(input_path, 'test_yaml/test_dataframe.csv')
 
@@ -27,7 +27,7 @@ dataset_train = pd.read_csv(dataset_train_path)
 X_train = dataset_train.iloc[:, :-1].values
 y_train = dataset_train.iloc[:, 1].values
 
-dataset_test = pd.read_csv(dataset_train_path)
+dataset_test = pd.read_csv(dataset_test_path)
 #dataset_train= dataset_train.rename(columns={'YearsExperience':'X_train',
 #                                   'Salary':'y_train'})
 X_test = dataset_test.iloc[:, :-1].values
