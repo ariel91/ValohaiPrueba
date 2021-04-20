@@ -32,4 +32,5 @@ OutDataset = os.path.join(output_path, 'carpeta_dataset_salida/train_dataframe.c
 
 X_train["Salary"]=y_train.tolist()
 train = X_train
-train.to_csv ("train_dataframe.csv", index = False, header=True)
+#train.to_csv ("train_dataframe.csv", index = False, header=True)
+train.to_csv (OutDataset, index = False, header=True)
