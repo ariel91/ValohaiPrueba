@@ -76,5 +76,5 @@
         type: execution
         step: Step para entrenar modelo
     edges:
-      - [preprocess.output.*.csv, train.input.train_yaml,train.input.test_yaml]
-      
+      - [preprocess.output.test_dataframe.csv, train.input.test_yaml]
+﻿      - [preprocess.output.train_dataframe.csv, train.input.train_yaml]      
